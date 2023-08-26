@@ -11,7 +11,9 @@ import SwiftUI
 struct SproutApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(prescriptions: [Prescription(id: "", start: "", end: "", description: "", medications: [])])
+           ContentView(prescriptions: [Prescription(id: "", start: "", end: "", description: "", medications: [])])
+            
+           // ContentView(prescription: Prescription(id: "", start: "", end: "", description: "", medications: []))
         }
     }
 }

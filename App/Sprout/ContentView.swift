@@ -13,58 +13,61 @@ struct ContentView: View {
     
     var body: some View {
         
-        VStack(alignment: .center) {
+        
             
-            Text("Up Next")
-                .font(.title)
-                .navigationTitle("Prescriptions")
-                .toolbar() {
-                    Button("New") {
-                        print("add")
+            
+            
+           // VStack(alignment: .center) {
+                
+                
+                
+                
+                
+                /*
+                
+                
+                Text("All Prescriptions")
+                    .font(.title)
+                
+                NavigationStack {
+                    
+                    
+                    List(prescriptions) { prescription in
+                        NavigationLink(prescription.id, value: prescription)
+                            
+                    }
+                    
+                    
+                    .navigationDestination(for: Prescription.self) { prescription in
+                        PrescriptionView(prescription: prescription)
+                            .navigationTitle(prescription.id)
+                    }
+                    
+                    .navigationTitle("Bitch Ass Hoe")
+                    .toolbar() {
+                        Button("Add") {
+                            print("add")
+                        }
                     }
                 }
+                
+                 */
+                
+           // }
             
-            List($prescriptions) { prescription in
+        
+        
+     
+        
+        ScrollView {
+            
+            ForEach($prescriptions) { prescription in
                 
                 MedicationPreviewView(prescription.wrappedValue)
                     
             }
             
-            /*
-            
-            
-            Text("All Prescriptions")
-                .font(.title)
-            
-            NavigationStack {
-                
-                
-                List(prescriptions) { prescription in
-                    NavigationLink(prescription.id, value: prescription)
-                        
-                }
-                
-                
-                .navigationDestination(for: Prescription.self) { prescription in
-                    PrescriptionView(prescription: prescription)
-                        .navigationTitle(prescription.id)
-                }
-                
-                .navigationTitle("Bitch Ass Hoe")
-                .toolbar() {
-                    Button("Add") {
-                        print("add")
-                    }
-                }
-            }
-            
-             */
-            
         }
-        
-     
-        
-        
         
         
         
@@ -116,6 +119,7 @@ struct Medication: CustomIdentifiable, Decodable, Hashable {
     // set somewhere else, not in JSON
     
     var overdue: Bool? = false
+    var now: Bool? = false
     
     
 }
@@ -144,22 +148,17 @@ struct PrescriptionView: View {
         
     var body: some View {
         
-        ScrollView() {
-            
-            VStack(alignment: .center) {
-               
-                ForEach($prescription.medications) { medication in
-                    MedicationView(medication: medication)
-                        .padding()
-                        .background(.background)
-                        .cornerRadius(20)
-                        .padding()
-                        .shadow(radius: 4)
-                        
-                }
-                
+        VStack(alignment: .center) {
+           
+            List($prescription.medications) { medication in
+                MedicationView(medication: medication)
+                    .padding()
+                    .background(.background)
+                    .cornerRadius(20)
+                    .padding()
+                    .shadow(radius: 4)
+                    
             }
-            
             
         }
         
