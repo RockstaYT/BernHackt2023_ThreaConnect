@@ -19,14 +19,15 @@ const config = {
     "@typescript-eslint/no-unsafe-assignment": "off",
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/consistent-type-imports": "off",
 
-    "@typescript-eslint/consistent-type-imports": [
+    /*"@typescript-eslint/consistent-type-imports": [
       "warn",
       {
         prefer: "type-imports",
         fixStyle: "inline-type-imports",
       },
-    ],
+    ],*/
     "@typescript-eslint/no-unused-vars": ["warn", { argsIgnorePattern: "^_" }],
   },
 };
