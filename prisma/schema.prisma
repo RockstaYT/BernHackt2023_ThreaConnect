@@ -75,7 +75,7 @@ model Prescription {
 
 model Medication {
   id        String @id @default(auto()) @map("_id") @db.ObjectId
-  strenght  Int
+  strength  Int
   name      String
   frequency String
   taken     String
