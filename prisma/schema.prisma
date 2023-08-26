@@ -70,7 +70,7 @@ model Prescription {
   start       DateTime
   end         DateTime
   description String
-  DrMedTable  DrMedTable[]
+  doctor  DrMedTable[]
 }
 
 model Medication {

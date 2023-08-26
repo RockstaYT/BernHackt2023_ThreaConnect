@@ -27,7 +27,7 @@ export default async function handler(
         start: new Date(),
         end: new Date(),
         description: "",
-        DrMedTable: {
+        doctor: {
           create: [
             {
               name: "Cornelia Wirz",

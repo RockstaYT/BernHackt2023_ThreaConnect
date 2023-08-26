@@ -15,7 +15,7 @@ export default async function handler(
         start: new Date(body.start),
         end: new Date(body.end),
         description: body.description,
-        DrMedTable: { create: body.doctor },
+        doctor: { create: body.doctor },
       },
     });
 
@@ -24,6 +24,7 @@ export default async function handler(
     const prescriptions = await prisma.prescription.findMany({
       include: {
         medications: true,
+        doctor: true,
       },
     });
 
