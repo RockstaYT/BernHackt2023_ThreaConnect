@@ -70,16 +70,20 @@ model Prescription {
   start       DateTime
   end         DateTime
   description String
-  doctor  DrMedTable[]
+  name        String
+  doctor      DrMedTable[]
 }
 
 model Medication {
-  id        String @id @default(auto()) @map("_id") @db.ObjectId
-  strength  Int
-  name      String
-  frequency String
-  taken     String
-  dosage    Int
+  id             String        @id @default(auto()) @map("_id") @db.ObjectId
+  strength       Int
+  name           String
+  frequency      String
+  taken          String
+  dosage         Int
+  notes          String
+  extraInfo      Boolean
+  extraNotes     String
   Prescription   Prescription? @relation(fields: [prescriptionId], references: [id])
   prescriptionId String?       @db.ObjectId
 }

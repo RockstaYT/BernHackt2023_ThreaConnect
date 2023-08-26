@@ -11,6 +11,7 @@ export default async function handler(
 
     const perscription = await prisma.prescription.create({
       data: {
+        name: body.name,
         medications: { create: body.medications },
         start: new Date(body.start),
         end: new Date(body.end),
