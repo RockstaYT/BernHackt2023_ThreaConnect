@@ -79,7 +79,8 @@ model Medication {
   name      String
   frequency String
   taken     String
-  Prescription   Prescription? @relation(fields: [id], references: [id])
+  dosage    Int
+  Prescription   Prescription? @relation(fields: [prescriptionId], references: [id])
   prescriptionId String?       @db.ObjectId
 }
 
@@ -89,7 +90,7 @@ model DrMedTable {
   adress         String
   mail           String        @unique
   phone          String        @unique
-  Prescription   Prescription? @relation(fields: [id], references: [id])
+  Prescription   Prescription? @relation(fields: [prescriptionId], references: [id])
   prescriptionId String?       @db.ObjectId
 
   @@unique([name, adress])

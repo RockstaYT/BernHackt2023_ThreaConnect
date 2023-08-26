@@ -16,6 +16,7 @@ export default async function handler(
         medications: {
           create: [
             {
+              dosage: 1,
               strenght: 400,
               name: "Algifor-L forte 400",
               frequency: "1111",
