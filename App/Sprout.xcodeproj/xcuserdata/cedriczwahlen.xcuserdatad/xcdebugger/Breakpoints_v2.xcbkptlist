@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7BCC0D06-C2C3-434A-9A6C-3D03F727DF1C"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DFD7EA77-7CFF-4ADF-961D-820CC41597AA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sprout/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9D8F1B10-AC1E-47E9-9EA4-6B55DFB39B33"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sprout/Treatment.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "314"
+            endingLineNumber = "314"
+            landmarkName = "init(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9D8F1B10-AC1E-47E9-9EA4-6B55DFB39B33 - 7c85fb2af282367f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "288"
+                  endingLineNumber = "288"
+                  offsetFromSymbolStart = "1429">
+               </Location>
+               <Location
+                  uuid = "9D8F1B10-AC1E-47E9-9EA4-6B55DFB39B33 - 7c85fb2af2823756"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "295"
+                  endingLineNumber = "295"
+                  offsetFromSymbolStart = "21891">
+               </Location>
+               <Location
+                  uuid = "9D8F1B10-AC1E-47E9-9EA4-6B55DFB39B33 - 7c85fb2af2823735"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "294"
+                  endingLineNumber = "294"
+                  offsetFromSymbolStart = "3527">
+               </Location>
+               <Location
+                  uuid = "9D8F1B10-AC1E-47E9-9EA4-6B55DFB39B33 - 7c85fb2af2823690"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "289"
+                  endingLineNumber = "289"
+                  offsetFromSymbolStart = "2943">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2E987482-D3A2-46B4-A71C-8558B0CA1CA5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sprout/Treatment.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
+            landmarkName = "init(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2E987482-D3A2-46B4-A71C-8558B0CA1CA5 - 7c85fb2af282cd58"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "217"
+                  endingLineNumber = "217"
+                  offsetFromSymbolStart = "7743">
+               </Location>
+               <Location
+                  uuid = "2E987482-D3A2-46B4-A71C-8558B0CA1CA5 - 7c85fb2af282cd79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "10589">
+               </Location>
+               <Location
+                  uuid = "2E987482-D3A2-46B4-A71C-8558B0CA1CA5 - 7c85fb2af282cd79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "11664">
+               </Location>
+               <Location
+                  uuid = "2E987482-D3A2-46B4-A71C-8558B0CA1CA5 - 7c85fb2af282cd79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "11095">
+               </Location>
+               <Location
+                  uuid = "2E987482-D3A2-46B4-A71C-8558B0CA1CA5 - 7c85fb2af282cd79"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "218"
+                  endingLineNumber = "218"
+                  offsetFromSymbolStart = "10382">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E505B2B-BE6E-4200-8913-98161D70AF34"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sprout/Treatment.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "270"
+            endingLineNumber = "270"
+            landmarkName = "init(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5E505B2B-BE6E-4200-8913-98161D70AF34 - 7c85fb2af28230c3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "244"
+                  endingLineNumber = "244"
+                  offsetFromSymbolStart = "10858">
+               </Location>
+               <Location
+                  uuid = "5E505B2B-BE6E-4200-8913-98161D70AF34 - 7c85fb2af28230e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "245"
+                  endingLineNumber = "245"
+                  offsetFromSymbolStart = "14770">
+               </Location>
+               <Location
+                  uuid = "5E505B2B-BE6E-4200-8913-98161D70AF34 - 7c85fb2af28230e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "245"
+                  endingLineNumber = "245"
+                  offsetFromSymbolStart = "15845">
+               </Location>
+               <Location
+                  uuid = "5E505B2B-BE6E-4200-8913-98161D70AF34 - 7c85fb2af28230e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "245"
+                  endingLineNumber = "245"
+                  offsetFromSymbolStart = "15276">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "075AD9E7-9659-4A94-8527-523DCC7C0387"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sprout/Treatment.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "297"
+            endingLineNumber = "297"
+            landmarkName = "init(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "075AD9E7-9659-4A94-8527-523DCC7C0387 - 7c85fb2af282344e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "271"
+                  endingLineNumber = "271"
+                  offsetFromSymbolStart = "13865">
+               </Location>
+               <Location
+                  uuid = "075AD9E7-9659-4A94-8527-523DCC7C0387 - 7c85fb2af282346f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "272"
+                  endingLineNumber = "272"
+                  offsetFromSymbolStart = "18843">
+               </Location>
+               <Location
+                  uuid = "075AD9E7-9659-4A94-8527-523DCC7C0387 - 7c85fb2af282346f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "272"
+                  endingLineNumber = "272"
+                  offsetFromSymbolStart = "19918">
+               </Location>
+               <Location
+                  uuid = "075AD9E7-9659-4A94-8527-523DCC7C0387 - 7c85fb2af282346f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "272"
+                  endingLineNumber = "272"
+                  offsetFromSymbolStart = "19349">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "800E1D52-DFC5-414F-8572-73FE7C797ED2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sprout/Treatment.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "216"
+            endingLineNumber = "216"
+            landmarkName = "init(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "800E1D52-DFC5-414F-8572-73FE7C797ED2 - 7c85fb2af282c9dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "190"
+                  endingLineNumber = "190"
+                  offsetFromSymbolStart = "4412">
+               </Location>
+               <Location
+                  uuid = "800E1D52-DFC5-414F-8572-73FE7C797ED2 - 7c85fb2af282c9fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "6192">
+               </Location>
+               <Location
+                  uuid = "800E1D52-DFC5-414F-8572-73FE7C797ED2 - 7c85fb2af282c9fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "7267">
+               </Location>
+               <Location
+                  uuid = "800E1D52-DFC5-414F-8572-73FE7C797ED2 - 7c85fb2af282c9fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sprout.MedicationPreviewView.init(Sprout.Prescription) -&gt; Sprout.MedicationPreviewView"
+                  moduleName = "Sprout"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cedriczwahlen/Documents/Coding/Xcode/Sprout/Sprout/Treatment.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "191"
+                  endingLineNumber = "191"
+                  offsetFromSymbolStart = "6698">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D76E898F-28D9-4CA0-8375-3C6A0467B177"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sprout/Treatment.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "250"
+            endingLineNumber = "250"
+            landmarkName = "init(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9FE78AA1-801B-4041-B2FC-6D4E57F2F3B9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sprout/Treatment.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "263"
+            endingLineNumber = "263"
+            landmarkName = "init(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
