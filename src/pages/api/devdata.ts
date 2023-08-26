@@ -56,14 +56,3 @@ export default async function handler(
     res.status(200).send({ message: JSON.stringify(test) });
   }
 }
-
-function addPrescription(
-  start: Date,
-  end: Date,
-  medications: Medication[],
-  doctor: any
-) {
-  for (const medication of medications) {
-    prisma.medication;
-  }
-}
