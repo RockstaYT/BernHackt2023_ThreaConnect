@@ -13,64 +13,29 @@ struct ContentView: View {
     
     var body: some View {
         
-        
-            
-            
-            
-           // VStack(alignment: .center) {
+        TabView {
+            ScrollView {
                 
-                
-                
-                
-                
-                /*
-                
-                
-                Text("All Prescriptions")
-                    .font(.title)
-                
-                NavigationStack {
+                ForEach($prescriptions) { prescription in
                     
+                    MedicationPreviewView(prescription.wrappedValue)
                     
-                    List(prescriptions) { prescription in
-                        NavigationLink(prescription.id, value: prescription)
-                            
-                    }
-                    
-                    
-                    .navigationDestination(for: Prescription.self) { prescription in
-                        PrescriptionView(prescription: prescription)
-                            .navigationTitle(prescription.id)
-                    }
-                    
-                    .navigationTitle("Bitch Ass Hoe")
-                    .toolbar() {
-                        Button("Add") {
-                            print("add")
-                        }
-                    }
                 }
                 
-                 */
-                
-           // }
-            
-        
-        
-     
-        
-        ScrollView {
-            
-            ForEach($prescriptions) { prescription in
-                
-                MedicationPreviewView(prescription.wrappedValue)
-                    
             }
-            
+            .badge(1)
+            .tabItem {
+                Label("Due", systemImage: "pill")
+            }
+            Text("This would be the affirmation screen")
+                .tabItem {
+                    Label("Affirmations", systemImage: "brain")
+                }
+            Text("This would be the progress view")
+                .tabItem {
+                    Label("Progress", systemImage: "figure.walk")
+                }
         }
-        
-        
-        
         
         .onAppear() {
             
@@ -114,7 +79,7 @@ struct Medication: CustomIdentifiable, Decodable, Hashable {
     var frequency: String // ex: 0100
     var taken: String // ex: 1000
     var prescriptionId: String
-    
+    var notes: String
     
     // set somewhere else, not in JSON
     
@@ -175,6 +140,6 @@ protocol CustomIdentifiable: Identifiable<String> {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(prescriptions: [Prescription(id: "1", start: "", end: "", description: "", medications: [Medication(id: "1", name: "Bla", strength: 2, dosage: 2, frequency: "0101", taken: "0011", prescriptionId: "1")])])
+        ContentView(prescriptions: [Prescription(id: "1", start: "", end: "", description: "", medications: [Medication(id: "1", name: "Bla", strength: 2, dosage: 2, frequency: "0101", taken: "0011", prescriptionId: "1", notes: "")])])
     }
 }

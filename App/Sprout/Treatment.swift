@@ -11,11 +11,18 @@ import SwiftUI
 
 fileprivate let bg = Color(red: 0.98, green: 0.98, blue: 0.98)
 
+fileprivate let t0 = 6
+fileprivate let t1 = 10
+fileprivate let t2 = 18
+fileprivate let t3 = 22
+
+
 struct MedicationView: View {
     
     @Binding var medication: Medication
     
     var body: some View {
+        
         VStack(alignment: .leading) {
            
             HStack(alignment: .bottom) {
@@ -34,15 +41,14 @@ struct MedicationView: View {
             
             Frequency(medication)
             
-           
-            
-            Text("Before a meal")
+            Text(medication.notes)
                 .font(.callout)
             
             
         }
-        //.frame(height: 120)
-        //.fixedSize(horizontal: false, vertical: true)
+        .padding()
+        .background(.white)
+        .cornerRadius(20)
         .padding()
         
     }
@@ -130,21 +136,21 @@ struct TimeIndicatorButtonStyle: ButtonStyle {
         
         var d = true
         
-        if hour >= 18 && hour < 22 && time == "sunset" { d = false }
-        else if hour >= 12 && hour < 18 && time == "sun.max" { d = false }
-        else if hour >= 6 && hour < 12 && time == "sunrise" { d = false }
+        if hour >= t2 && hour < t3 && time == "sunset" { d = false }
+        else if hour >= t1 && hour < t2 && time == "sun.max" { d = false }
+        else if hour >= t0 && hour < t1 && time == "sunrise" { d = false }
         
         dim = d
         
         var l = true
         
-        if hour >= 18 && time == "sunset" { l = false }
-        else if hour >= 12 && time == "sun.max" { l = false }
-        else if hour >= 6 && time == "sunrise" { l = false }
+        if hour >= t2 && time == "sunset" { l = false }
+        else if hour >= t1 && time == "sun.max" { l = false }
+        else if hour >= t0 && time == "sunrise" { l = false }
         
         later = l
         
-       
+        
         
     }
     
@@ -155,6 +161,7 @@ struct TimeIndicatorButtonStyle: ButtonStyle {
     var time: String
     var later: Bool
     @Binding var active: Bool
+    
     
     func makeBody(configuration: Configuration) -> some View {
         
@@ -224,7 +231,7 @@ struct MedicationPreviewView: View {
             
             
             
-            if hour >= 22 {
+            if hour >= t3 {
                 // due
                 for i in 3..<4 {
                     
@@ -255,7 +262,7 @@ struct MedicationPreviewView: View {
                     
                 }
                 
-            } else if hour >= 18 {
+            } else if hour >= t2 {
                 
                 for i in 2..<4 {
                     
@@ -286,7 +293,7 @@ struct MedicationPreviewView: View {
                     
                 }
                 
-            } else if hour >= 12 {
+            } else if hour >= t1 {
                 
                 for i in 1..<4 {
                     
@@ -317,7 +324,7 @@ struct MedicationPreviewView: View {
                     
                 }
                 
-            } else if hour >= 6 {
+            } else if hour >= t0 {
                 
                 for i in 0..<4 {
                     
@@ -344,9 +351,9 @@ struct MedicationPreviewView: View {
         print(medications.filter({ $0.overdue ?? false }).count)
         
         
-        self.dueLater = medications.filter({ $0.overdue ?? false == false && ($0.now ?? false) == false })
+        self.dueLater = Array(Set<Medication>( medications.filter({ $0.overdue ?? false == false && ($0.now ?? false) == false }) ))
         
-        self.dues = medications.filter({ $0.overdue ?? false == false && $0.now ?? false == true })
+        self.dues = Array(Set<Medication>( medications.filter({ $0.overdue ?? false == false && $0.now ?? false == true }) ))
         
         self.overdue = Array(Set<Medication>( medications.filter({ $0.overdue ?? false == true }) ))
         
@@ -368,25 +375,26 @@ struct MedicationPreviewView: View {
                     Text("Overdue")
                         .font(.title)
                         .bold()
-                        .padding(.vertical)
+                        .padding(.top)
+                        //.foregroundColor(.white)
                     
                     Text("You missed at least one dose of this medication.")
                         .font(.callout)
                         .foregroundColor(.secondary)
+                        //.foregroundColor(Color(red: 0.8, green: 0.8, blue: 0.8))
                     
                     
                     ForEach($overdue) { medication in
                         
                         MedicationView(medication: medication)
-                            .padding(.horizontal)
-                            
+                            .shadow(radius: 2)
                         
                     }
                     
                 }
-                .background(.white)
-                .cornerRadius(40)
-                .shadow(radius: 10)
+                .background(Color(red: 236.0 / 255.0, green: 41.0 / 255.0, blue: 28.0 / 255.0)) // , ,
+                .cornerRadius(30)
+                .shadow(radius: 7)
                 .padding()
                 
                 
@@ -406,7 +414,7 @@ struct MedicationPreviewView: View {
                     Text("Due Now")
                         .font(.title)
                         .bold()
-                        .padding(.vertical)
+                        .padding(.top)
                     
                     Text("Take one dose of these medications now.")
                         .font(.callout)
@@ -415,7 +423,7 @@ struct MedicationPreviewView: View {
                     ForEach($dues) { medication in
                         
                         MedicationView(medication: medication)
-                            
+                            .shadow(radius: 2)
                     
                         
                     }
@@ -424,9 +432,9 @@ struct MedicationPreviewView: View {
                     
                 }
                 .background(.white)
-                .cornerRadius(40)
-                .shadow(radius: 2)
-                .padding(20)
+                .cornerRadius(30)
+                .shadow(radius: 7)
+                .padding()
                 
             }
             
@@ -441,23 +449,23 @@ struct MedicationPreviewView: View {
                     Text("Due Later")
                         .font(.title)
                         .bold()
-                        .padding(.vertical)
+                        .padding(.top)
                     
                     Text("Take these medications later today.")
                         .font(.callout)
                         .foregroundColor(.secondary)
                     
-                    List($dueLater) { medication in
+                    ForEach($dueLater) { medication in
                         
                         MedicationView(medication: medication)
-                        
+                            .shadow(radius: 2)
                     }
                     
                 }
                 .background(.white)
-                .cornerRadius(40)
-                .shadow(radius: 2)
-                .padding(20)
+                .cornerRadius(30)
+                .shadow(radius: 7)
+                .padding()
                 
                 
             }
